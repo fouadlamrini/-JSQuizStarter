@@ -42,4 +42,24 @@ body{
     width: 100%;
     height: 30px;
     border-radius: 5px;
+    margin-top: 5px;
+}
+.Error{
+    color: red;
+}
+
+.theme{  width: 60%;
+    margin: auto;
+    margin-top: 15px;
+    padding: 5px;
+}
+
+.theme1{
+    text-align: center;
+}
+.ChoixTheme{
+      width: 100%;
+    height: 30px;
+    border-radius: 5px;
+    margin-top: 5px;
 }
