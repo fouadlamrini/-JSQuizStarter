@@ -13,7 +13,7 @@
   'wght' 400,
   'GRAD' 0,
   'opsz' 24;
-  color: rgb(0, 94, 255);
+ color: white;
 
 }
 
@@ -28,8 +28,8 @@ body{
 
 .container{
     border: #222 solid 2px;
-    width: 80%;
-    height: 80vh;
+    width: 70%;
+    padding: 10px;
     border-radius: 10px;
 }
 .UserName{
@@ -49,6 +49,7 @@ body{
 }
 .Error{
     color: red;
+    margin-top: 5px;
 }
 
 .theme{  width: 60%;
@@ -67,15 +68,25 @@ body{
     margin-top: 5px;
 }
 
-.StartQuiz{
-     width: 10%;
+
+
+button{    width: 10%;
      height: 30px;
     margin: auto;
     margin-top: 15px;
     padding: 5px;
-   background-color: rgb(4, 31, 185);
+   
    display: flex;
    justify-content: space-around;
    color: white;
    border-radius: 5px;
+    
+    
+    background-color: rgb(4, 31, 185);
+    cursor: pointer;
+    border: none;
+}
+
+button:hover{
+    background-color:rgb(34, 64, 237) ;
 }
