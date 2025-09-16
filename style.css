@@ -1,6 +1,7 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 
@@ -15,5 +16,19 @@
 }
 
 body{
-    mar
+     background: linear-gradient(to right, #e3f2fd, #ffffff); 
+  color: #222;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;  
+}
+
+.container{
+    border: #222 solid 2px;
+    width: 80%;
+    height: 80vh;
+    border-radius: 10px;
+   
 }
