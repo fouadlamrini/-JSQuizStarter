@@ -1,6 +1,6 @@
-let button=document.getElementById("StartQuiz");
+let StartQuiz=document.getElementById("StartQuiz");
 
-button.addEventListener('click' ,()=>{
+StartQuiz.addEventListener('click' ,()=>{
   let ChoixTheme=document.getElementById("ChoixTheme");
   let input_name=document.getElementById("input_name");
   let Error=document.getElementById("Error");
@@ -14,4 +14,7 @@ button.addEventListener('click' ,()=>{
   } else {
     window.location.href = 'index.html';
   }
+
+  localStorage.setItem('info',ChoixTheme.value);
 })
+

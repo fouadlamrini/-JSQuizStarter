@@ -1,5 +1,5 @@
 let ObjThem = {
-  Progrmation: [
+  Programation: [
     {
       Questionn: "Que signifie un élément sémantique en HTML ?",
       Reponses: [
@@ -105,7 +105,7 @@ let ObjThem = {
         "web.php est utilisé pour les interfaces web avec middleware (sessions, CSRF), tandis que api.php est",
       NbrQst: "10/10",
     },
-  ],
+  ],  
   Math: [
     {
       Questionn: "Quelle est la valeur de :7x8 ?",
@@ -256,6 +256,8 @@ let ObjThem = {
   ],
 };
 
+
+
 //Affichage des Questions
 
 let question=document.getElementById("question");
@@ -271,31 +273,41 @@ let nbr_question=document.getElementById("nbr_question");
 // choix4.textContent=ArrQuiz[NumQst].Reponses[3];
 // nbr_question.textContent=ArrQuiz[NumQst].NbrQst;
 
+const category = localStorage.getItem("info");
+
+
 
 let NumQst=0;
 
-  question.textContent=ObjThem.Progrmation[0].Questionn;
-  choix1.textContent=ObjThem.Progrmation[0].Reponses[0];
-  choix2.textContent=ObjThem.Progrmation[0].Reponses[1];
-  choix3.textContent=ObjThem.Progrmation[0].Reponses[2];
-  choix4.textContent=ObjThem.Progrmation[0].Reponses[3];
-  nbr_question.textContent=ObjThem.Progrmation[0].NbrQst;
+  question.textContent=ObjThem[category][0].Questionn;
+  choix1.textContent=ObjThem[category][0].Reponses[0];
+  choix2.textContent=ObjThem[category][0].Reponses[1];
+  choix3.textContent=ObjThem[category][0].Reponses[2];
+  choix4.textContent=ObjThem[category][0].Reponses[3];
+  // choix2.textContent=ObjThem.category[0].Reponses[1];
+  // choix3.textContent=ObjThem.category[0].Reponses[2];
+  // choix4.textContent=ObjThem.category[0].Reponses[3];
+  nbr_question.textContent=ObjThem[category][0].NbrQst;
 
 
 function afficherQst(x){
   NumQst+=x;
- if(NumQst>ObjThem.Progrmation.length-1){
-  NumQst=0;
+ if(NumQst>ObjThem[category].length-1){
+  let btnSuivant=document.getElementById("suivant");
+  btnSuivant.textContent="Valider";
+  btnSuivant.classList.add("valider");
+  clearInterval(timeQcm);é
+  // window.location.href="rapport.html";
  }
  if(NumQst<0){
-   NumQst=ObjThem.Progrmation.length-1;
+   NumQst=ObjThem[category].length-1;
  }
-  question.textContent=ObjThem.Progrmation[NumQst].Questionn;
-  choix1.textContent=ObjThem.Progrmation[NumQst].Reponses[0];
-  choix2.textContent=ObjThem.Progrmation[NumQst].Reponses[1];
-  choix3.textContent=ObjThem.Progrmation[NumQst].Reponses[2];
-  choix4.textContent=ObjThem.Progrmation[NumQst].Reponses[3];
-  nbr_question.textContent=ObjThem.Progrmation[NumQst].NbrQst;
+  question.textContent=ObjThem[category][NumQst].Questionn;
+  choix1.textContent=ObjThem[category][NumQst].Reponses[0];
+  choix2.textContent=ObjThem[category][NumQst].Reponses[1];
+  choix3.textContent=ObjThem[category][NumQst].Reponses[2];
+  choix4.textContent=ObjThem[category][NumQst].Reponses[3];
+  nbr_question.textContent=ObjThem[category][NumQst].NbrQst;
 }
 
 setInterval(afficherQst,5000,1)
@@ -303,4 +315,4 @@ setInterval(afficherQst,5000,1)
 
 let time =document.getElementById("time");
 time.textContent=0;
-setInterval(()=>time.textContent++,1000);
+let timeQcm=setInterval(()=>time.textContent++,1000);
