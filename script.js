@@ -296,7 +296,10 @@ function afficherQst(x){
   let btnSuivant=document.getElementById("suivant");
   btnSuivant.textContent="Valider";
   btnSuivant.classList.add("valider");
-  clearInterval(timeQcm);é
+  document.getElementsByClassName('valider')[0].addEventListener('click',function(){
+window.location.href='rapport.html';
+  });
+  clearInterval(timeQcm);
   // window.location.href="rapport.html";
  }
  if(NumQst<0){
