@@ -258,13 +258,12 @@ let ObjThem = {
 
 //Affichage des Questions
 
-// let NumQst=0;
-// let question=document.getElementById("question");
-// let choix1=document.getElementById("choix1");
-// let choix2=document.getElementById("choix2");
-// let choix3=document.getElementById("choix3");
-// let choix4=document.getElementById("choix4");
-// let nbr_question=document.getElementById("nbr_question");
+let question=document.getElementById("question");
+let choix1=document.getElementById("choix1");
+let choix2=document.getElementById("choix2");
+let choix3=document.getElementById("choix3");
+let choix4=document.getElementById("choix4");
+let nbr_question=document.getElementById("nbr_question");
 // question.textContent=ArrQuiz[NumQst]. Questionn;
 // choix1.textContent=ArrQuiz[NumQst].Reponses[0];
 // choix2.textContent=ArrQuiz[NumQst].Reponses[1];
@@ -273,4 +272,30 @@ let ObjThem = {
 // nbr_question.textContent=ArrQuiz[NumQst].NbrQst;
 
 
+let NumQst=0;
+
+  question.textContent=ObjThem.Progrmation[0].Questionn;
+  choix1.textContent=ObjThem.Progrmation[0].Reponses[0];
+  choix2.textContent=ObjThem.Progrmation[0].Reponses[1];
+  choix3.textContent=ObjThem.Progrmation[0].Reponses[2];
+  choix4.textContent=ObjThem.Progrmation[0].Reponses[3];
+  nbr_question.textContent=ObjThem.Progrmation[0].NbrQst;
+
+
+function afficherQst(x){
+  NumQst+=x;
+ if(NumQst>ObjThem.Progrmation.length-1){
+  NumQst=0;
+ }
+ if(NumQst<0){
+   NumQst=ObjThem.Progrmation.length-1;
+ }
+  question.textContent=ObjThem.Progrmation[NumQst].Questionn;
+  choix1.textContent=ObjThem.Progrmation[NumQst].Reponses[0];
+  choix2.textContent=ObjThem.Progrmation[NumQst].Reponses[1];
+  choix3.textContent=ObjThem.Progrmation[NumQst].Reponses[2];
+  choix4.textContent=ObjThem.Progrmation[NumQst].Reponses[3];
+  nbr_question.textContent=ObjThem.Progrmation[NumQst].NbrQst;
+
+}
 
