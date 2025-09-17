@@ -292,8 +292,9 @@ let NumQst=0;
 
 function afficherQst(x){
   NumQst+=x;
- if(NumQst>ObjThem[category].length-1){
+
   let btnSuivant=document.getElementById("suivant");
+ if(NumQst>ObjThem[category].length-1){
   btnSuivant.textContent="Valider";
   btnSuivant.classList.add("valider");
   document.getElementsByClassName('valider')[0].addEventListener('click',function(){
@@ -302,8 +303,13 @@ window.location.href='rapport.html';
   clearInterval(timeQcm);
   // window.location.href="rapport.html";
  }
- if(NumQst<0){
-   NumQst=ObjThem[category].length-1;
+ else if(NumQst<0){
+ NumQst=ObjThem[category].length-1;
+}
+else{
+  
+  btnSuivant.textContent="Suivant";
+  btnSuivant.classList.remove("valider");
  }
   question.textContent=ObjThem[category][NumQst].Questionn;
   choix1.textContent=ObjThem[category][NumQst].Reponses[0];

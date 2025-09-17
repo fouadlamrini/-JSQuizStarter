@@ -1,10 +1,34 @@
 let StartQuiz=document.getElementById("StartQuiz");
 
+    function InfoUtilisateur() {
+        let ChoixTheme=document.getElementById("ChoixTheme").value;
+  let input_name=document.getElementById("input_name").value;
+
+    if(ChoixTheme==='Theme'||input_name==''){
+      return;
+    }
+      let utilisateurs;
+      const stocker = localStorage.getItem("utilisateurs");
+      if (stocker) {
+        utilisateurs = JSON.parse(stocker);
+      } else {
+        utilisateurs = [];
+      }
+
+     
+      utilisateurs.push({ input_name, ChoixTheme });
+
+      
+      localStorage.setItem("utilisateurs", JSON.stringify(utilisateurs));
+
+    }
+
 StartQuiz.addEventListener('click' ,()=>{
-  let ChoixTheme=document.getElementById("ChoixTheme");
-  let input_name=document.getElementById("input_name");
+  // let ChoixTheme=document.getElementById("ChoixTheme");
+  // let input_name=document.getElementById("input_name");
   let Error=document.getElementById("Error");
   let Error1=document.getElementById("Error1");
+  InfoUtilisateur();
   if(input_name.value.trim()=='' || ChoixTheme.value==="Theme"){
     if (ChoixTheme.value==="Theme") {
       Error1.textContent="Choisir un theme";
@@ -15,6 +39,5 @@ StartQuiz.addEventListener('click' ,()=>{
     window.location.href = 'index.html';
   }
 
-  localStorage.setItem('info',ChoixTheme.value);
 })
 
