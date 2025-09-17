@@ -115,15 +115,98 @@ let ObjThem = {
     },
 
     {
-      Questionn: "",
-      Reponses: ["", "", "", ""],
-      BonneReponse: "",
+      Questionn: "Quelle est la racine carrée de 144 ?",
+      Reponses: ["10", "11", "12", "14"],
+      BonneReponse: "12",
       NbrQst: "2/10",
     },
     {
-      Questionn: "",
-      Reponses: ["", "", "", ""],
-      BonneReponse: "",
+      Questionn: "si x=5, quelle est la valeur de 2x^2+3?",
+      Reponses: ["48", "50", "53", "55"],
+      BonneReponse: "53",
+      NbrQst: "3/10",
+    },
+    {
+      Questionn: "Quelle est la fraction équivalente à 3/4",
+      Reponses: ["6/8", "8/12", "5/7", "9/16"],
+      BonneReponse: "6/8",
+      NbrQst: "4/10",
+    },
+    {
+      Questionn: "Résultat de :(15+5)/4",
+      Reponses: [
+        "4",
+        "5",
+        "6",
+        "8",
+      ],
+      BonneReponse:
+        "5",
+      NbrQst: "5/10",
+    },
+    {
+      Questionn: "Quelle est la valeur de :3^4?",
+      Reponses: [
+        "27",
+        "64",
+        "81",
+        "243",
+      ],
+      BonneReponse:
+        "81",
+      NbrQst: "6/10",
+    },
+    {
+      Questionn: "Un triangle a des côtés de 3 cm, 4 cm et 5 cm. Ce triangle est :",
+      Reponses: ["Isocèle", "Rectangle", "Équilatéral", "Obtus"],
+      BonneReponse: "Rectangle",
+      NbrQst: "7/10",
+    },
+    {
+      Questionn: "Si une pizza est coupée en 12 parts égales et que tu en manges 3, quelle fraction reste ?",
+      Reponses: ["1/4", "2/3", "3/4", "1/3"],
+      BonneReponse:
+        "2/3",
+      NbrQst: "8/10",
+    },
+    {
+      Questionn: "La valeur de 2(x+3) quand x=4 est:",
+      Reponses: [
+        "10",
+        "12",
+        "15",
+        "14",
+      ],
+      BonneReponse: "14",
+      NbrQst: "9/10",
+    },
+    {
+      Questionn:
+        "Quelle est l’aire d’un rectangle de longueur 12 cm et de largeur 5 cm ?",
+      Reponses: [ "17 cm²", "60 cm²", "24 cm²", "50 cm²"],
+      BonneReponse:
+        "60 cm²",
+      NbrQst: "10/10",
+    },
+  ],
+  Sport: [
+    {
+      Questionn: "Combien de joueurs y a-t-il dans une équipe de football sur le terrain ?",
+      Reponses: ["9", "10", "11", "12"],
+      BonneReponse: "11",
+      NbrQst: "1/10",
+    },
+
+    {
+      Questionn: "Quel pays a remporté la Coupe du Monde de football en 2018 ?",
+      Reponses: ["Allemagne", "France", "Brésil", "Argentine"],
+      BonneReponse: "France",
+      NbrQst: "2/10",
+    },
+    {
+      Questionn: "Dans le basketball, combien de points vaut un tir à 3 points ?",
+      Reponses: ["1", "2", "3", "4"],
+      BonneReponse: "3",
       NbrQst: "3/10",
     },
     {
@@ -136,173 +219,66 @@ let ObjThem = {
       Questionn: "",
       Reponses: [
         "",
-        "La désactivation des variables",
-        "Une méthode pour accélérer le chargement des images",
-        "Ajouter des propriétés au DOM uniquement",
+        "",
+        "",
+        "",
       ],
       BonneReponse:
-        "Le déplacement des déclarations de variables et fonctions en haut de leur portée avant exécution",
+        "",
       NbrQst: "5/10",
     },
     {
-      Questionn: "Quelle est la différence entre == et === en JavaScript ?",
+      Questionn: "",
       Reponses: [
-        "Aucune différence",
-        "== compare après conversion de type, tandis que === compare type et valeur (strict)",
-        "== compare uniquement le type, === compare uniquement la valeur",
-        "=== n’est disponible qu’à partir d’ES6",
+        "",
+        "",
+        "",
+        "",
       ],
       BonneReponse:
-        "== compare après conversion de type, tandis que === compare type et valeur (strict)",
+        "",
       NbrQst: "6/10",
     },
     {
-      Questionn: ") Comment déclare-t-on une variable en PHP ?",
-      Reponses: ["var x = 5", "$x = 5", "x := 5", "let x = 5"],
-      BonneReponse: "$x = 5",
+      Questionn: "",
+      Reponses: ["", "", "", ""],
+      BonneReponse: "",
       NbrQst: "7/10",
     },
     {
-      Questionn: "Qu’est-ce qu’une superglobale comme $_GET en PHP ?",
+      Questionn: "",
       Reponses: [
-        "Une variable définie uniquement dans les fonctions",
-        "Un tableau accessible dans tous les contextes (global) sans global $var",
-        "Une variable utilisable une seule fois",
-        "Une variable contenant uniquement des fonctions",
+        "",
+        "",
+        "",
+        "",
       ],
       BonneReponse:
-        "Un tableau accessible dans tous les contextes (global) sans global $var",
+        "",
       NbrQst: "8/10",
     },
     {
-      Questionn: "Dans quel fichier définit-on les routes web dans Laravel ?",
+      Questionn: "",
       Reponses: [
-        "routes/web.php",
-        "app/Http/routes.php",
-        "config/routes.php",
-        "public/index.php",
+        "",
+        "",
+        "",
+        "",
       ],
-      BonneReponse: "routes/web.php",
+      BonneReponse: "",
       NbrQst: "9/10",
     },
     {
       Questionn:
-        "Quelle est la différence principale entre routes/web.php et routes/api.php dans Laravel ?",
+        "",
       Reponses: [
-        "Aucune différence",
-        "web.php est utilisé pour les interfaces web avec middleware (sessions, CSRF), tandis que api.php est",
-        "api.php est réservé aux fichiers statiques",
-        "web.php ne fonctionne qu’avec JSON",
+        "",
+        "",
+        "",
+        "",
       ],
       BonneReponse:
-        "web.php est utilisé pour les interfaces web avec middleware (sessions, CSRF), tandis que api.php est",
-      NbrQst: "10/10",
-    },
-  ],
-  Sport: [
-    {
-      Questionn: "Que signifie un élément sémantique en HTML ?",
-      Reponses: [
-        "Un élément qui donne du sens à son contenu et aide le SEO et les lecteurs automatiques",
-        "Un élément utilisé uniquement pour le style sans signification",
-        "Un élément réservé à JavaScript",
-        "Un élément qui change selon le navigateur",
-      ],
-      BonneReponse:
-        "Un élément qui donne du sens à son contenu et aide le SEO et les lecteurs automatiques",
-      NbrQst: "1/10",
-    },
-
-    {
-      Questionn:
-        "Quel est l’élément le plus approprié pour représenter un article autonome (self-contained article) ?",
-      Reponses: ["<div>", "<article>", "<span>", "<section>"],
-      BonneReponse: "<article>",
-      NbrQst: "2/10",
-    },
-    {
-      Questionn:
-        "Si on applique les règles suivantes au même élément : #id { color: red; } .class { color: blue; }, laquelle sera appliquée ?",
-      Reponses: [
-        ".class { color: blue; }",
-        "#id { color: red; }",
-        "La dernière dans le fichier peu importe le type",
-        "Le navigateur choisit le sélecteur le plus court",
-      ],
-      BonneReponse: "#id { color: red; }",
-      NbrQst: "3/10",
-    },
-    {
-      Questionn:
-        "Quelle propriété définit l’espace intérieur (distance entre le contenu et la bordure) ?",
-      Reponses: ["margin", "border", "padding", "outline"],
-      BonneReponse: "padding",
-      NbrQst: "4/10",
-    },
-    {
-      Questionn: "Qu’est-ce que le hoisting en JavaScript ?",
-      Reponses: [
-        "Le déplacement des déclarations de variables et fonctions en haut de leur portée avant exécution",
-        "La désactivation des variables",
-        "Une méthode pour accélérer le chargement des images",
-        "Ajouter des propriétés au DOM uniquement",
-      ],
-      BonneReponse:
-        "Le déplacement des déclarations de variables et fonctions en haut de leur portée avant exécution",
-      NbrQst: "5/10",
-    },
-    {
-      Questionn: "Quelle est la différence entre == et === en JavaScript ?",
-      Reponses: [
-        "Aucune différence",
-        "== compare après conversion de type, tandis que === compare type et valeur (strict)",
-        "== compare uniquement le type, === compare uniquement la valeur",
-        "=== n’est disponible qu’à partir d’ES6",
-      ],
-      BonneReponse:
-        "== compare après conversion de type, tandis que === compare type et valeur (strict)",
-      NbrQst: "6/10",
-    },
-    {
-      Questionn: ") Comment déclare-t-on une variable en PHP ?",
-      Reponses: ["var x = 5", "$x = 5", "x := 5", "let x = 5"],
-      BonneReponse: "$x = 5",
-      NbrQst: "7/10",
-    },
-    {
-      Questionn: "Qu’est-ce qu’une superglobale comme $_GET en PHP ?",
-      Reponses: [
-        "Une variable définie uniquement dans les fonctions",
-        "Un tableau accessible dans tous les contextes (global) sans global $var",
-        "Une variable utilisable une seule fois",
-        "Une variable contenant uniquement des fonctions",
-      ],
-      BonneReponse:
-        "Un tableau accessible dans tous les contextes (global) sans global $var",
-      NbrQst: "8/10",
-    },
-    {
-      Questionn: "Dans quel fichier définit-on les routes web dans Laravel ?",
-      Reponses: [
-        "routes/web.php",
-        "app/Http/routes.php",
-        "config/routes.php",
-        "public/index.php",
-      ],
-      BonneReponse: "routes/web.php",
-      NbrQst: "9/10",
-    },
-    {
-      Questionn:
-        "Quelle est la différence principale entre routes/web.php et routes/api.php dans Laravel ?",
-      Reponses: [
-        "Aucune différence",
-        "web.php est utilisé pour les interfaces web avec middleware (sessions, CSRF), tandis que api.php est",
-        "api.php est réservé aux fichiers statiques",
-        "web.php ne fonctionne qu’avec JSON",
-      ],
-      BonneReponse:
-        "web.php est utilisé pour les interfaces web avec middleware (sessions, CSRF), tandis que api.php est",
+        "",
       NbrQst: "10/10",
     },
   ],
