@@ -17,19 +17,21 @@
 
         <div class="UserName">
             <p class="Name"> Entrer Votre Nom d'Utilisateur SVP</p>
-            <input type="text" placeholder="  Exemple:Fouad " class="input_name">
-            <p class="Error">Error de nom</p>
+            <input id="input_name" type="text" placeholder="  Exemple:Fouad " class="input_name">
+            <p id="Error" class="Error"></p>
         </div>
         <div class="theme">
             <p class="theme1">Choisir Le theme</p>
-            <Select class="ChoixTheme">
+            <Select id="ChoixTheme" class="ChoixTheme">
+                <option value="Theme">Theme</option>
                 <option value="Progrmation">Progrmation</option>
                 <option value="Math">Math</option>
                 <option value="Sport">Sport</option>
             </Select>
+            <p id="Error1" class="Error">test</p>
         </div>
         
-            <button class="StartQuiz">Start   <span class="material-symbols-outlined">
+            <button id="StartQuiz" class="StartQuiz" onclick="validation()">Start   <span class="material-symbols-outlined">
                 arrow_forward
             </span> </button>
            
@@ -41,7 +43,8 @@
 
 
 
-    <script src="home.js"></script>
+  
+    <script src="script.js"></script>
 </body>
 
 </html>

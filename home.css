@@ -70,14 +70,14 @@ body{
 
 
 
-button{    width: 10%;
-     height: 30px;
+button{    width: 20%;
+     height: 40px;
     margin: auto;
     margin-top: 15px;
     padding: 5px;
-   
    display: flex;
    justify-content: space-around;
+   align-items: center;
    color: white;
    border-radius: 5px;
     
