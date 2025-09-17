@@ -296,6 +296,11 @@ function afficherQst(x){
   choix3.textContent=ObjThem.Progrmation[NumQst].Reponses[2];
   choix4.textContent=ObjThem.Progrmation[NumQst].Reponses[3];
   nbr_question.textContent=ObjThem.Progrmation[NumQst].NbrQst;
-
 }
 
+setInterval(afficherQst,5000,1)
+
+
+let time =document.getElementById("time");
+time.textContent=0;
+setInterval(()=>time.textContent++,1000);
