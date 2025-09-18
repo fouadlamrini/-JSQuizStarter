@@ -105,7 +105,7 @@ let ObjThem = {
         "web.php est utilisé pour les interfaces web avec middleware (sessions, CSRF), tandis que api.php est",
       NbrQst: "10/10",
     },
-  ],  
+  ],
   Math: [
     {
       Questionn: "Quelle est la valeur de :7x8 ?",
@@ -134,64 +134,48 @@ let ObjThem = {
     },
     {
       Questionn: "Résultat de :(15+5)/4",
-      Reponses: [
-        "4",
-        "5",
-        "6",
-        "8",
-      ],
-      BonneReponse:
-        "5",
+      Reponses: ["4", "5", "6", "8"],
+      BonneReponse: "5",
       NbrQst: "5/10",
     },
     {
       Questionn: "Quelle est la valeur de :3^4?",
-      Reponses: [
-        "27",
-        "64",
-        "81",
-        "243",
-      ],
-      BonneReponse:
-        "81",
+      Reponses: ["27", "64", "81", "243"],
+      BonneReponse: "81",
       NbrQst: "6/10",
     },
     {
-      Questionn: "Un triangle a des côtés de 3 cm, 4 cm et 5 cm. Ce triangle est :",
+      Questionn:
+        "Un triangle a des côtés de 3 cm, 4 cm et 5 cm. Ce triangle est :",
       Reponses: ["Isocèle", "Rectangle", "Équilatéral", "Obtus"],
       BonneReponse: "Rectangle",
       NbrQst: "7/10",
     },
     {
-      Questionn: "Si une pizza est coupée en 12 parts égales et que tu en manges 3, quelle fraction reste ?",
+      Questionn:
+        "Si une pizza est coupée en 12 parts égales et que tu en manges 3, quelle fraction reste ?",
       Reponses: ["1/4", "2/3", "3/4", "1/3"],
-      BonneReponse:
-        "2/3",
+      BonneReponse: "2/3",
       NbrQst: "8/10",
     },
     {
       Questionn: "La valeur de 2(x+3) quand x=4 est:",
-      Reponses: [
-        "10",
-        "12",
-        "15",
-        "14",
-      ],
+      Reponses: ["10", "12", "15", "14"],
       BonneReponse: "14",
       NbrQst: "9/10",
     },
     {
       Questionn:
         "Quelle est l’aire d’un rectangle de longueur 12 cm et de largeur 5 cm ?",
-      Reponses: [ "17 cm²", "60 cm²", "24 cm²", "50 cm²"],
-      BonneReponse:
-        "60 cm²",
+      Reponses: ["17 cm²", "60 cm²", "24 cm²", "50 cm²"],
+      BonneReponse: "60 cm²",
       NbrQst: "10/10",
     },
   ],
   Sport: [
     {
-      Questionn: "Combien de joueurs y a-t-il dans une équipe de football sur le terrain ?",
+      Questionn:
+        "Combien de joueurs y a-t-il dans une équipe de football sur le terrain ?",
       Reponses: ["9", "10", "11", "12"],
       BonneReponse: "11",
       NbrQst: "1/10",
@@ -204,7 +188,8 @@ let ObjThem = {
       NbrQst: "2/10",
     },
     {
-      Questionn: "Dans le basketball, combien de points vaut un tir à 3 points ?",
+      Questionn:
+        "Dans le basketball, combien de points vaut un tir à 3 points ?",
       Reponses: ["1", "2", "3", "4"],
       BonneReponse: "3",
       NbrQst: "3/10",
@@ -217,15 +202,20 @@ let ObjThem = {
     },
     {
       Questionn: "Le marathon a une distance officielle de :",
-      Reponses: ["40 km","42,195 km","45 km","50 km"],
-      BonneReponse:
-        "42,195 km",
+      Reponses: ["40 km", "42,195 km", "45 km", "50 km"],
+      BonneReponse: "42,195 km",
       NbrQst: "5/10",
     },
     {
-      Questionn: "Quel joueur de tennis détient le plus de titres du Grand Chelem en simple masculin (2025) ?",
-      Reponses: ["Roger Federer","Rafael Nadal","Novak Djokovic","Andy Murray",],
-      BonneReponse:"Rafael Nadal",
+      Questionn:
+        "Quel joueur de tennis détient le plus de titres du Grand Chelem en simple masculin (2025) ?",
+      Reponses: [
+        "Roger Federer",
+        "Rafael Nadal",
+        "Novak Djokovic",
+        "Andy Murray",
+      ],
+      BonneReponse: "Rafael Nadal",
       NbrQst: "6/10",
     },
     {
@@ -235,122 +225,137 @@ let ObjThem = {
       NbrQst: "7/10",
     },
     {
-      Questionn: "Combien de joueurs y a-t-il dans une équipe de volleyball sur le terrain ?",
-      Reponses: ["5","6","7","8",],
+      Questionn:
+        "Combien de joueurs y a-t-il dans une équipe de volleyball sur le terrain ?",
+      Reponses: ["5", "6", "7", "8"],
       BonneReponse: "6",
       NbrQst: "8/10",
     },
     {
-      Questionn: "Quel pays est considéré comme le berceau des Jeux Olympiques ?",
-      Reponses: ["Italie","Grèce","France","Égypte"],
+      Questionn:
+        "Quel pays est considéré comme le berceau des Jeux Olympiques ?",
+      Reponses: ["Italie", "Grèce", "France", "Égypte"],
       BonneReponse: "Grèce",
       NbrQst: "9/10",
     },
     {
-      Questionn:
-        "Le Tour de France est une compétition de :",
-      Reponses: ["Natation","Cyclisme","Course à pied","Triathlon"],
-      BonneReponse:"Cyclisme",
+      Questionn: "Le Tour de France est une compétition de :",
+      Reponses: ["Natation", "Cyclisme", "Course à pied", "Triathlon"],
+      BonneReponse: "Cyclisme",
       NbrQst: "10/10",
     },
   ],
 };
 
-
-
 //Affichage des Questions
 
-let question=document.getElementById("question");
-let choix1=document.getElementById("choix1");
-let choix2=document.getElementById("choix2");
-let choix3=document.getElementById("choix3");
-let choix4=document.getElementById("choix4");
-let nbr_question=document.getElementById("nbr_question");
-// question.textContent=ArrQuiz[NumQst]. Questionn;
-// choix1.textContent=ArrQuiz[NumQst].Reponses[0];
-// choix2.textContent=ArrQuiz[NumQst].Reponses[1];
-// choix3.textContent=ArrQuiz[NumQst].Reponses[2];
-// choix4.textContent=ArrQuiz[NumQst].Reponses[3];
-// nbr_question.textContent=ArrQuiz[NumQst].NbrQst;
+let question = document.getElementById("question");
+let choix1 = document.getElementById("choix1");
+let choix2 = document.getElementById("choix2");
+let choix3 = document.getElementById("choix3");
+let choix4 = document.getElementById("choix4");
+let nbr_question = document.getElementById("nbr_question");
 
 const category = JSON.parse(localStorage.getItem("utilisateurs"));
 
+let NumQst = 0;
 
+question.textContent =
+  ObjThem[category[category.length - 1]["ChoixTheme"]][0].Questionn;
+choix1.textContent =
+  ObjThem[category[category.length - 1]["ChoixTheme"]][0].Reponses[0];
+choix2.textContent =
+  ObjThem[category[category.length - 1]["ChoixTheme"]][0].Reponses[1];
+choix3.textContent =
+  ObjThem[category[category.length - 1]["ChoixTheme"]][0].Reponses[2];
+choix4.textContent =
+  ObjThem[category[category.length - 1]["ChoixTheme"]][0].Reponses[3];
 
+nbr_question.textContent =
+  ObjThem[category[category.length - 1]["ChoixTheme"]][0].NbrQst;
 
-let NumQst=0;
+let btnSuivant = document.getElementById("suivant");
+let btnAccept = document.getElementById("accept");
 
-  question.textContent=ObjThem[category[category.length-1]['ChoixTheme']][0].Questionn;
-  choix1.textContent=ObjThem[category[category.length-1]['ChoixTheme']][0].Reponses[0];
-  choix2.textContent=ObjThem[category[category.length-1]['ChoixTheme']][0].Reponses[1];
-  choix3.textContent=ObjThem[category[category.length-1]['ChoixTheme']][0].Reponses[2];
-  choix4.textContent=ObjThem[category[category.length-1]['ChoixTheme']][0].Reponses[3];
-  // choix2.textContent=ObjThem.category[0].Reponses[1];
-  // choix3.textContent=ObjThem.category[0].Reponses[2];
-  // choix4.textContent=ObjThem.category[0].Reponses[3];
-  nbr_question.textContent=ObjThem[category[category.length-1]['ChoixTheme']][0].NbrQst;
+let clicked = false;
 
-
-function afficherQst(x){
-  NumQst+=x;
-
-  let btnSuivant=document.getElementById("suivant");
- if(NumQst>ObjThem[category[category.length-1]['ChoixTheme']].length-1){
-  btnSuivant.textContent="Valider";
-  btnSuivant.classList.add("valider");
-  document.getElementsByClassName('valider')[0].addEventListener('click',function(){
-window.location.href='rapport.html';
-  });
-  clearInterval(timeQcm);
-  // window.location.href="rapport.html";
- }
- else if(NumQst<0){
- NumQst=ObjThem[category[category.length-1]['ChoixTheme']].length-1;
-}
-else{
-  
-  btnSuivant.textContent="Suivant";
-  btnSuivant.classList.remove("valider");
- }
-  question.textContent=ObjThem[category[category.length-1]['ChoixTheme']][NumQst].Questionn;
-  choix1.textContent=ObjThem[category[category.length-1]['ChoixTheme']][NumQst].Reponses[0];
-  choix2.textContent=ObjThem[category[category.length-1]['ChoixTheme']][NumQst].Reponses[1];
-  choix3.textContent=ObjThem[category[category.length-1]['ChoixTheme']][NumQst].Reponses[2];
-  choix4.textContent=ObjThem[category[category.length-1]['ChoixTheme']][NumQst].Reponses[3];
-  nbr_question.textContent=ObjThem[category[category.length-1]['ChoixTheme']][NumQst].NbrQst;
-}
-
-setInterval(afficherQst,15000,1)
-
-
-let time =document.getElementById("time");
-time.textContent=0;
-let timeQcm=setInterval(()=>time.textContent++,1000);
-
-function optionChoisir(){
-  let paragraphContenu;
-  let score=0;
-  let score2=document.getElementById("score");
-  let options=document.querySelectorAll('.option');
-   options.forEach(option => {
-      option.addEventListener('click', () => {
-       
-      paragraphContenu = option.querySelector('span').textContent;
-     let answerCOrrect=ObjThem[category[category.length-1]['ChoixTheme']][NumQst].BonneReponse;
-     let label=option.querySelector('label');
-    if(paragraphContenu===answerCOrrect){
-      score2.textContent=Number(score2.textContent)+10;
-     label.style.backgroundColor = 'lightgreen';
-    }
-    else{
-       label.style.backgroundColor = '#ff7f7f';
-    }
-
-
-
-      });
+function afficherQst(x) {
+  if (clicked === true) {
+    clicked = false;
+    NumQst += x;
+    let options = document.querySelectorAll(".option");
+    options.forEach((option) => {
+      let label = option.querySelector("label");
+      label.style.backgroundColor = "";
     });
-   
-  }
-  optionChoisir();
 
+    if (
+      NumQst >
+      ObjThem[category[category.length - 1]["ChoixTheme"]].length - 1
+    ) {
+      btnSuivant.textContent = "Valider";
+      btnSuivant.classList.add("valider");
+      document
+        .getElementsByClassName("valider")[0]
+        .addEventListener("click", function () {
+          window.location.href = "rapport.html";
+        });
+      clearInterval(timeQcm);
+    } else if (NumQst < 0) {
+      NumQst = ObjThem[category[category.length - 1]["ChoixTheme"]].length - 1;
+    } else {
+      btnSuivant.textContent = "Suivant";
+      btnSuivant.classList.remove("valider");
+    }
+    question.textContent =
+      ObjThem[category[category.length - 1]["ChoixTheme"]][NumQst].Questionn;
+    choix1.textContent =
+      ObjThem[category[category.length - 1]["ChoixTheme"]][NumQst].Reponses[0];
+    choix2.textContent =
+      ObjThem[category[category.length - 1]["ChoixTheme"]][NumQst].Reponses[1];
+    choix3.textContent =
+      ObjThem[category[category.length - 1]["ChoixTheme"]][NumQst].Reponses[2];
+    choix4.textContent =
+      ObjThem[category[category.length - 1]["ChoixTheme"]][NumQst].Reponses[3];
+    nbr_question.textContent =
+      ObjThem[category[category.length - 1]["ChoixTheme"]][NumQst].NbrQst;
+  }
+}
+setInterval(afficherQst, 15000, 1);
+
+let time = document.getElementById("time");
+time.textContent = 0;
+let timeQcm = setInterval(() => time.textContent++, 1000);
+
+function optionChoisir() {
+  let paragraphContenu;
+  let score = 0;
+  let score2 = document.getElementById("score");
+  let options = document.querySelectorAll(".option");
+  let answerInput = document.querySelectorAll(".answerInput");
+  options.forEach((option) => {
+    option.addEventListener("click", () => {
+      if (!clicked) {
+        for (let i = 0; i < answerInput.length; i++) {
+          answerInput[i].disabled = true;
+        }
+        paragraphContenu = option.querySelector("span").textContent;
+        let answerCOrrect =
+          ObjThem[category[category.length - 1]["ChoixTheme"]][NumQst]
+            .BonneReponse;
+        let label = option.querySelector("label");
+
+        if (paragraphContenu === answerCOrrect) {
+          label.style.backgroundColor = "lightgreen";
+          score += 10;
+          label.style.display = "disable";
+        } else {
+          label.style.backgroundColor = "#ff7f7f";
+        }
+        score2.textContent = score;
+        clicked = true;
+      }
+    });
+  });
+}
+optionChoisir();
