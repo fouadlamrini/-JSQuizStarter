@@ -329,6 +329,8 @@ let timeQcm=setInterval(()=>time.textContent++,1000);
 
 function optionChoisir(){
   let paragraphContenu;
+  let score=0;
+  let score2=document.getElementById("score");
   let options=document.querySelectorAll('.option');
    options.forEach(option => {
       option.addEventListener('click', () => {
@@ -337,7 +339,7 @@ function optionChoisir(){
      let answerCOrrect=ObjThem[category[category.length-1]['ChoixTheme']][NumQst].BonneReponse;
      let label=option.querySelector('label');
     if(paragraphContenu===answerCOrrect){
-      
+      score2.textContent=Number(score2.textContent)+10;
      label.style.backgroundColor = 'lightgreen';
     }
     else{
@@ -350,5 +352,5 @@ function optionChoisir(){
     });
    
   }
-  console.log(optionChoisir());
+  optionChoisir();
 
