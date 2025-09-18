@@ -273,28 +273,29 @@ let nbr_question=document.getElementById("nbr_question");
 // choix4.textContent=ArrQuiz[NumQst].Reponses[3];
 // nbr_question.textContent=ArrQuiz[NumQst].NbrQst;
 
-const category = localStorage.getItem("info");
+const category = JSON.parse(localStorage.getItem("utilisateurs"));
+
 
 
 
 let NumQst=0;
 
-  question.textContent=ObjThem[category][0].Questionn;
-  choix1.textContent=ObjThem[category][0].Reponses[0];
-  choix2.textContent=ObjThem[category][0].Reponses[1];
-  choix3.textContent=ObjThem[category][0].Reponses[2];
-  choix4.textContent=ObjThem[category][0].Reponses[3];
+  question.textContent=ObjThem[category[category.length-1]['ChoixTheme']][0].Questionn;
+  choix1.textContent=ObjThem[category[category.length-1]['ChoixTheme']][0].Reponses[0];
+  choix2.textContent=ObjThem[category[category.length-1]['ChoixTheme']][0].Reponses[1];
+  choix3.textContent=ObjThem[category[category.length-1]['ChoixTheme']][0].Reponses[2];
+  choix4.textContent=ObjThem[category[category.length-1]['ChoixTheme']][0].Reponses[3];
   // choix2.textContent=ObjThem.category[0].Reponses[1];
   // choix3.textContent=ObjThem.category[0].Reponses[2];
   // choix4.textContent=ObjThem.category[0].Reponses[3];
-  nbr_question.textContent=ObjThem[category][0].NbrQst;
+  nbr_question.textContent=ObjThem[category[category.length-1]['ChoixTheme']][0].NbrQst;
 
 
 function afficherQst(x){
   NumQst+=x;
 
   let btnSuivant=document.getElementById("suivant");
- if(NumQst>ObjThem[category].length-1){
+ if(NumQst>ObjThem[category[category.length-1]['ChoixTheme']].length-1){
   btnSuivant.textContent="Valider";
   btnSuivant.classList.add("valider");
   document.getElementsByClassName('valider')[0].addEventListener('click',function(){
@@ -304,24 +305,50 @@ window.location.href='rapport.html';
   // window.location.href="rapport.html";
  }
  else if(NumQst<0){
- NumQst=ObjThem[category].length-1;
+ NumQst=ObjThem[category[category.length-1]['ChoixTheme']].length-1;
 }
 else{
   
   btnSuivant.textContent="Suivant";
   btnSuivant.classList.remove("valider");
  }
-  question.textContent=ObjThem[category][NumQst].Questionn;
-  choix1.textContent=ObjThem[category][NumQst].Reponses[0];
-  choix2.textContent=ObjThem[category][NumQst].Reponses[1];
-  choix3.textContent=ObjThem[category][NumQst].Reponses[2];
-  choix4.textContent=ObjThem[category][NumQst].Reponses[3];
-  nbr_question.textContent=ObjThem[category][NumQst].NbrQst;
+  question.textContent=ObjThem[category[category.length-1]['ChoixTheme']][NumQst].Questionn;
+  choix1.textContent=ObjThem[category[category.length-1]['ChoixTheme']][NumQst].Reponses[0];
+  choix2.textContent=ObjThem[category[category.length-1]['ChoixTheme']][NumQst].Reponses[1];
+  choix3.textContent=ObjThem[category[category.length-1]['ChoixTheme']][NumQst].Reponses[2];
+  choix4.textContent=ObjThem[category[category.length-1]['ChoixTheme']][NumQst].Reponses[3];
+  nbr_question.textContent=ObjThem[category[category.length-1]['ChoixTheme']][NumQst].NbrQst;
 }
 
-setInterval(afficherQst,5000,1)
+setInterval(afficherQst,15000,1)
 
 
 let time =document.getElementById("time");
 time.textContent=0;
 let timeQcm=setInterval(()=>time.textContent++,1000);
+
+function optionChoisir(){
+  let paragraphContenu;
+  let options=document.querySelectorAll('.option');
+   options.forEach(option => {
+      option.addEventListener('click', () => {
+       
+      paragraphContenu = option.querySelector('span').textContent;
+     let answerCOrrect=ObjThem[category[category.length-1]['ChoixTheme']][NumQst].BonneReponse;
+     let label=option.querySelector('label');
+    if(paragraphContenu===answerCOrrect){
+      
+     label.style.backgroundColor = 'lightgreen';
+    }
+    else{
+       label.style.backgroundColor = '#ff7f7f';
+    }
+
+
+
+      });
+    });
+   
+  }
+  console.log(optionChoisir());
+
