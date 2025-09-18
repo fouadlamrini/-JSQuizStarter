@@ -16,7 +16,7 @@ let StartQuiz=document.getElementById("StartQuiz");
       }
 
      
-      utilisateurs.push({ name:input_name, theme:ChoixTheme });
+      utilisateurs.push({ name:input_name, theme:ChoixTheme,  answers: [], score: 0 });
 
       
       localStorage.setItem("utilisateurs", JSON.stringify(utilisateurs));

@@ -354,8 +354,26 @@ function optionChoisir() {
         }
         score2.textContent = score;
         clicked = true;
+        saveResult(paragraphContenu, answerCOrrect, score)
       }
     });
   });
 }
 optionChoisir();
+
+function saveResult(reponseChoisie, correctAnswer, score) {
+  const stocker = localStorage.getItem("utilisateurs");
+  if (!stocker) return;
+
+  let utilisateurs = JSON.parse(stocker);
+  let lastUser = utilisateurs[utilisateurs.length - 1];
+
+  
+  lastUser.answers.push({
+    reponseChoisie: reponseChoisie,
+    correctAnswer: correctAnswer,
+  });
+   lastUser.score = score;
+
+  localStorage.setItem("utilisateurs", JSON.stringify(utilisateurs));
+}
