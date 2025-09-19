@@ -32,9 +32,9 @@ body {
 
 .Rapport {
   border: none;
-  padding: 16px 12px;
+  padding: 10px 8px;
   border-radius: 8px;
-  margin-bottom: 18px;
+  margin-bottom: 10px;
   font-size: 22px;
   font-weight: 700;
   color: #0d47a1;
@@ -94,8 +94,6 @@ body {
 }
 
 .infoUser p {
-  display: flex;
-  justify-content: space-between;
   align-items: center;
   background: #fbfcff;
   padding: 8px 10px;
@@ -116,7 +114,6 @@ body {
   color: #333333;
 }
 
-/* responsive: stack questions on small screens */
 @media (max-width: 700px) {
   .qst_rep {
     flex-direction: column;
