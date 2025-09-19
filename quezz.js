@@ -278,9 +278,13 @@ let btnSuivant = document.getElementById("suivant");
 let btnAccept = document.getElementById("accept");
 
 let clicked = false;
-
+let next=false;
+let allow = true;
 function afficherQst(x) {
-  
+    if(next){
+      allow = true;
+      time.textContent = 15;
+      next = false;
     clicked = false;
     NumQst += x;
     let options = document.querySelectorAll(".option");
@@ -318,14 +322,23 @@ function afficherQst(x) {
     choix4.textContent =
       ObjThem[category[category.length - 1]["theme"]][NumQst].Reponses[3];
     nbr_question.textContent =
-      ObjThem[category[category.length - 1]["theme"]][NumQst].NbrQst;
-  
+      ObjThem[category[category.length - 1]["theme"]][NumQst].NbrQst;   
+    }
 }
-setInterval(afficherQst, 15000, 1);
+// setInterval(afficherQst, 15000, 1);
 
 let time = document.getElementById("time");
-time.textContent = 0;
-let timeQcm = setInterval(() => time.textContent++, 1000);
+time.textContent = 15;
+let timeQcm = setInterval(() => {
+  if (allow) {
+    time.textContent--;  
+    if(time.textContent==0){
+      afficherQst(1);
+      saveResult("", "", "");
+      time.textContent=15;
+    }
+  } 
+}, 1000);
 
 function optionChoisir() {
   let paragraphContenu;
@@ -336,6 +349,8 @@ function optionChoisir() {
   options.forEach((option) => {
     option.addEventListener("click", () => {
       if (!clicked) {
+        allow = false;
+        next = true;
         for (let i = 0; i < answerInput.length; i++) {
           answerInput[i].disabled = true;
         }
