@@ -127,3 +127,15 @@ body {
     width: 100%;
   }
 }
+
+.feedback{
+  color: #d32f2f;
+  font-weight: 700;
+  font-size: 18px;
+  text-align: center;
+}
+
+.feedback span{
+  color: #1976d2;
+  font-weight: 600;
+}

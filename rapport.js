@@ -14,6 +14,16 @@ let user = data[data.length - 1];
 let jour=document.getElementById("jour");
 let mois=document.getElementById("mois");
 let an=document.getElementById("an");
+let feedback=document.getElementById("feedback");
+if(Number(user.score)<=10){
+  feedback.textContent="Tu peut faire le mieux";
+}
+else if(Number(user.score)<=10){
+ feedback.textContent="Excellent travail";
+}
+else{
+  feedback.textContent="passable";
+}
 jour.textContent=user.Datetime.jour;
 mois.textContent=user.Datetime.mois;
 an.textContent=user.Datetime.an;
