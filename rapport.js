@@ -3,7 +3,7 @@ document.getElementById('download').addEventListener('click', () => {
       html2pdf().from(element).save();
     });
 
-    let data = JSON.parse(localStorage.getItem("utilisateurs")) || [];
+    let data = JSON.parse(localStorage.getItem("utilisateurs"));
     let user = data[data.length - 1];
     document.querySelector(".ResCorr p span").textContent = user.score;
 document.querySelector(".Correction p span").textContent = user.theme;

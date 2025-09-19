@@ -1,58 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rapport</title>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js" integrity="sha512-GsLlZN/3F2ErC5ifS5QtgpiJtWd43JWSuIgh7mbzZ8zBps+dvLusV+eNQATqgA/HdeKFVgA5v3S/cIrLF7QnIg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"
+        integrity="sha512-GsLlZN/3F2ErC5ifS5QtgpiJtWd43JWSuIgh7mbzZ8zBps+dvLusV+eNQATqgA/HdeKFVgA5v3S/cIrLF7QnIg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="rapport.css">
 
 </head>
+
 <body>
-   <div id="content" class="content">
-    <p class="Rapport">Voici Votre Rapport</p>
-    <div class="ResCorr">
-            <p>votre point est: <span></span></p>
-        <div class="Correction">
-            <p > </p>
-            <p>theme: <span></span></p>
-           <div><p>Questionn1: <span></span></p>
-           <p>Reponse1: <span></span></p></div>
+    <div id="content" class="content">
+        <p class="Rapport">Voici Votre Rapport <span>Utilisateur</span></p>
+        <p class="date">Date: 19/09/2025 10:26 <span></span></p>
+        <div class="RepCorr">
+            <div class="infoUser">
+                <p>theme: <span></span></p>
+                <p>votre score est: <span></span></p>
+            </div>
+
+            <div class="Correction">
+
+                <div class="qst_rep qst_rep1">
+                    <p>Questionn1: <span></span></p>
+                    <p>Reponse1: <span></span></p>
+                </div>
 
 
-          <div><p>Questionn2: <span></span></p>
-           <p>Reponse2: <span></span></p></div>
+                <div class="qst_rep qst_rep2">
+                    <p>Questionn2: <span></span></p>
+                    <p>Reponse2: <span></span></p>
+                </div>
 
-           <div><p>Questionn3: <span></span></p>
-           <p>Reponse3: <span></span></p></div>
+                <div class="qst_rep qst_rep3">
+                    <p>Questionn3: <span></span></p>
+                    <p>Reponse3: <span></span></p>
+                </div>
 
-           <div><p>Questionn4: <span></span></p>
-           <p>Reponse4: <span></span></p></div>
+                <div class="qst_rep qst_rep4">
+                    <p>Questionn4: <span></span></p>
+                    <p>Reponse4: <span></span></p>
+                </div>
 
-           <div><p>Questionn5: <span></span></p>
-           <p>Reponse5: <span></span></p></div>
+                <div class="qst_rep qst_rep5">
+                    <p>Questionn5: <span></span></p>
+                    <p>Reponse5: <span></span></p>
+                </div>
 
-           <div><p>Questionn6: <span></span></p>
-           <p>Reponse6: <span></span></p></div>
+                <div class="qst_rep qst_rep6">
+                    <p>Questionn6: <span></span></p>
+                    <p>Reponse6: <span></span></p>
+                </div>
 
-          <div><p>Questionn7: <span></span></p>
-           <p>Reponse7: <span></span></p></div>
+                <div class="qst_rep qst_rep7">
+                    <p>Questionn7: <span></span></p>
+                    <p>Reponse7: <span></span></p>
+                </div>
 
-          <div><p>Questionn8: <span></span></p>
-           <p>Reponse8: <span></span></p></div>
+                <div class="qst_rep qst_rep8">
+                    <p>Questionn8: <span></span></p>
+                    <p>Reponse8: <span></span></p>
+                </div>
 
-          <div><p>Questionn9: <span></span></p>
-           <p>Reponse9: <span></span></p></div>
+                <div class="qst_rep qst_rep9">
+                    <p>Questionn9: <span></span></p>
+                    <p>Reponse9: <span></span></p>
+                </div>
 
-        <div><p>Questionn10: <span></span></p>
-           <p>Reponse10: <span></span></p></div>
+                <div class="qst_rep qst_rep10">
+                    <p>Questionn10: <span></span></p>
+                    <p>Reponse10: <span></span></p>
+                </div>
+            </div>
         </div>
+
+        <button class="telecharger" id="download">Telecharger</button>
+
+
+        <script src="rapport.js"></script>
+
     </div>
-
-    <button id="download">Telecharger</button>
-
-
-<script src="rapport.js"></script>
-
-   </div>
 </body>
+
 </html>
