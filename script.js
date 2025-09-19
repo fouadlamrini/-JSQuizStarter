@@ -15,8 +15,14 @@ let StartQuiz=document.getElementById("StartQuiz");
         utilisateurs = [];
       }
 
+       const now = new Date();
+
+  const day = now.getDate();
+  const month = now.getMonth() + 1;
+  const year = now.getFullYear();
+
      
-      utilisateurs.push({ name:input_name, theme:ChoixTheme,  answers: [], score: 0 });
+      utilisateurs.push({ name:input_name, theme:ChoixTheme,  answers: [], score: 0 },{jour:day,mois:month,anne:year});
 
       
       localStorage.setItem("utilisateurs", JSON.stringify(utilisateurs));
