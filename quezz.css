@@ -100,12 +100,6 @@ button:hover{
 .choix{
     cursor: pointer;
 }
-
-label:has(.choix:checked){
-    border-color: blue;
-    color: blue;
-}
-
 .valider{
     background-color: greenyellow;
 }
