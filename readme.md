@@ -8,3 +8,5 @@ Le projet consiste en un site de quiz à choix multiples qui affiche les questio
  valider la reponse si vrai au bien faux
  stocker pseudo name categorie choisi la reponse choisi et la reponse vrai dans localstorage
  afficher rapport qui contient datetime score feedback et correction
+ exporter pdf
+ responsive
