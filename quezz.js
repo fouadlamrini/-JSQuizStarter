@@ -155,7 +155,7 @@ let ObjThem = {
       Questionn:
         "Si une pizza est coupée en 12 parts égales et que tu en manges 3, quelle fraction reste ?",
       Reponses: ["1/4", "2/3", "3/4", "1/3"],
-      BonneReponse: "2/3",
+      BonneReponse: "3/4",
       NbrQst: "8/10",
     },
     {
@@ -275,16 +275,16 @@ nbr_question.textContent =
   ObjThem[category[category.length - 1]["theme"]][0].NbrQst;
 
 let btnSuivant = document.getElementById("suivant");
-let btnAccept = document.getElementById("accept");
+// let btnAccept = document.getElementById("accept");
 
 let clicked = false;
-let next=false;
+let next = false;
 let allow = true;
 function afficherQst(x) {
-    if(next){
-      allow = true;
-      time.textContent = 15;
-      next = false;
+  if (next) {
+    allow = true;
+    time.textContent = 15;
+    next = false;
     clicked = false;
     NumQst += x;
     let options = document.querySelectorAll(".option");
@@ -293,10 +293,7 @@ function afficherQst(x) {
       label.style.backgroundColor = "";
     });
 
-    if (
-      NumQst >
-      ObjThem[category[category.length - 1]["theme"]].length - 1
-    ) {
+    if (NumQst > ObjThem[category[category.length - 1]["theme"]].length - 1) {
       btnSuivant.textContent = "Valider";
       btnSuivant.classList.add("valider");
       document
@@ -322,8 +319,8 @@ function afficherQst(x) {
     choix4.textContent =
       ObjThem[category[category.length - 1]["theme"]][NumQst].Reponses[3];
     nbr_question.textContent =
-      ObjThem[category[category.length - 1]["theme"]][NumQst].NbrQst;   
-    }
+      ObjThem[category[category.length - 1]["theme"]][NumQst].NbrQst;
+  }
 }
 // setInterval(afficherQst, 15000, 1);
 
@@ -331,13 +328,13 @@ let time = document.getElementById("time");
 time.textContent = 15;
 let timeQcm = setInterval(() => {
   if (allow) {
-    time.textContent--;  
-    if(time.textContent==0){
+    time.textContent--;
+    if (time.textContent == 0) {
       afficherQst(1);
       saveResult("", "", "");
-      time.textContent=15;
+      time.textContent = 15;
     }
-  } 
+  }
 }, 1000);
 
 function optionChoisir() {
@@ -356,8 +353,7 @@ function optionChoisir() {
         }
         paragraphContenu = option.querySelector("span").textContent;
         let answerCOrrect =
-          ObjThem[category[category.length - 1]["theme"]][NumQst]
-            .BonneReponse;
+          ObjThem[category[category.length - 1]["theme"]][NumQst].BonneReponse;
         let label = option.querySelector("label");
 
         if (paragraphContenu === answerCOrrect) {
@@ -369,7 +365,7 @@ function optionChoisir() {
         }
         score2.textContent = score;
         clicked = true;
-        saveResult(paragraphContenu, answerCOrrect, score)
+        saveResult(paragraphContenu, answerCOrrect, score);
       }
     });
   });
@@ -383,12 +379,11 @@ function saveResult(reponseChoisie, correctAnswer, score) {
   let utilisateurs = JSON.parse(stocker);
   let lastUser = utilisateurs[utilisateurs.length - 1];
 
-  
   lastUser.answers.push({
     reponseChoisie: reponseChoisie,
     correctAnswer: correctAnswer,
   });
-   lastUser.score = score;
+  lastUser.score = score;
 
   localStorage.setItem("utilisateurs", JSON.stringify(utilisateurs));
 }

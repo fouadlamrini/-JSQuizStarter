@@ -10,4 +10,5 @@ Le projet consiste en un site de quiz à choix multiples qui affiche les questio
  afficher rapport qui contient datetime score feedback et correction
  exporter pdf
  responsive
+ validation input et select
  deployement de site

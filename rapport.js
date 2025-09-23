@@ -15,10 +15,10 @@ let jour=document.getElementById("jour");
 let mois=document.getElementById("mois");
 let an=document.getElementById("an");
 let feedback=document.getElementById("feedback");
-if(Number(user.score)<=10){
+if(Number(user.score)<50){
   feedback.textContent="Tu peut faire le mieux";
 }
-else if(Number(user.score)<=10){
+else if(Number(user.score)==100){
  feedback.textContent="Excellent travail";
 }
 else{
